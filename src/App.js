@@ -35,11 +35,9 @@ class App extends React.Component {
           As on: {this.state.date.substring(0, 9)}, 08:00 IST
         </div>
         <div className="links">
-          Links-
-          <br />
-          <a href="https://apify.com/zuzka/covid-in">API Used</a>
-          <br />
-          <a href="https://www.mohfw.gov.in/">Ministry of Health and Family Welfare Government of India</a>
+          <a href="https://apify.com/zuzka/covid-in">API Used</a><hr />
+
+          <a href="https://www.mohfw.gov.in/">Ministry of Health and Family Welfare Government of India</a><hr />
         </div>
         <Footer />
       </div>
