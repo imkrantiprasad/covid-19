@@ -1,0 +1,108 @@
+body {
+  background-color: whitesmoke;
+}
+
+.main {
+  width: 80%;
+  /* height: 80%; */
+  background-color: white;
+  margin: auto;
+  margin-top: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.head {
+  padding: 10px 0px;
+  text-align: center;
+  color: black;
+  /* text-decoration: underline; */
+}
+
+.foot {
+  padding: 10px 0px;
+  text-align: center;
+  color: black;
+}
+
+.foot a {
+  text-decoration: none;
+}
+
+.mid {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.links {
+  width: 50%;
+  margin: 5% auto;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.flex-container {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  /* flex-wrap: wrap;
+  align-content: space-around; */
+
+}
+
+.active {
+  border: 1px solid red;
+  margin: 5px;
+  border-radius: 10px;
+  max-width: 200px;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(240, 72, 72));
+}
+
+.recover {
+  border: 1px solid orange;
+  margin: 5px;
+  border-radius: 10px;
+  max-width: 200px;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(240, 162, 72));
+
+}
+
+.death {
+  border: 1px solid yellow;
+  margin: 5px;
+  border-radius: 10px;
+  max-width: 200px;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(243, 240, 62));
+
+}
+
+.total {
+  border: 1px solid green;
+  margin: 5px;
+  border-radius: 10px;
+  max-width: 200px;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(43, 207, 43));
+
+}
+
+#box {
+  padding: 10px 20px;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .flex-container {
+    /* display: flex;
+    justify-content: center; */
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+
+  .head {
+    font-size: larger;
+  }
+}
