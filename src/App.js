@@ -32,7 +32,7 @@ class App extends React.Component {
             <div className="death" id="box"> Deaths: {this.state.stats.deaths}</div>
             <div className="total" id="box"> Total: {this.state.stats.totalCases}</div>
           </div>
-          As on: {this.state.date.substring(0, 9)}, 08:00 IST
+          As on: {this.state.date.substring(0, 10)} 08:00 IST
         </div>
         <div className="links">
           <a href="https://apify.com/zuzka/covid-in">API Used</a><hr />
