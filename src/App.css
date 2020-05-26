@@ -1,7 +1,48 @@
 body {
   background-color: whitesmoke;
 }
+#loader {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  margin: -25px 0 0 -25px;
+  border: 4px rgba(0, 0, 0, 0.25) solid;
+  border-top: 10px #008744 solid;
+  border-right: 10px #0057e7 solid;
+  border-bottom: 10px #d62d20 solid;
+  border-left: 10px #ffa700 solid;
+  border-radius: 50%;
+  -webkit-animation: spin6 1s infinite linear;
+  animation: spin6 1s infinite linear;
+}
 
+@-webkit-keyframes spin6 {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin6 {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
 .main {
   width: 80%;
   /* height: 80%; */
@@ -39,7 +80,7 @@ tr:hover {
 }
 
 tr:nth-child(even) {
-  background-color: #f2f2f2
+  background-color: #f2f2f2;
 }
 
 .foot {
@@ -72,7 +113,6 @@ tr:nth-child(even) {
   justify-content: center;
   /* flex-wrap: wrap;
   align-content: space-around; */
-
 }
 
 .active {
@@ -80,7 +120,11 @@ tr:nth-child(even) {
   margin: 5px;
   border-radius: 10px;
   max-width: 200px;
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(240, 72, 72));
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(240, 72, 72)
+  );
 }
 
 .recover {
@@ -88,8 +132,11 @@ tr:nth-child(even) {
   margin: 5px;
   border-radius: 10px;
   max-width: 200px;
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(240, 162, 72));
-
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(240, 162, 72)
+  );
 }
 
 .death {
@@ -97,8 +144,11 @@ tr:nth-child(even) {
   margin: 5px;
   border-radius: 10px;
   max-width: 200px;
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(243, 240, 62));
-
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(243, 240, 62)
+  );
 }
 
 .total {
@@ -106,15 +156,16 @@ tr:nth-child(even) {
   margin: 5px;
   border-radius: 10px;
   max-width: 200px;
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(43, 207, 43));
-
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(43, 207, 43)
+  );
 }
 
 #box {
   padding: 10px 20px;
 }
-
-
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

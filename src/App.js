@@ -13,6 +13,7 @@ class App extends React.Component {
     this.state = {
       stats: [],
       con: [],
+      stLoaded: false,
       date: new Date().toLocaleString()
     }
   }
@@ -21,7 +22,8 @@ class App extends React.Component {
       .then(res => res.json())
       .then(json => {
         this.setState({
-          stats: json
+          stats: json,
+          stLoaded: true
         })
       });
 
@@ -35,52 +37,58 @@ class App extends React.Component {
   }
 
   render() {
-    var { stats } = this.state;
-    return (
-      <div className="main" >
-        <Header />
-        <div className="mid">
-          <div className="flex-container">
-            <div className="active" id="box">Active: {this.state.con.activeCases}</div>
-            <div className="recover" id="box"> Cured: {this.state.con.recovered}</div>
-            <div className="death" id="box"> Deaths: {this.state.con.deaths}</div>
-            <div className="total" id="box"> Total: {this.state.con.totalCases}</div>
-          </div>
-          <br />
-          <table style={{ overflowX: 'auto' }}>
-            <thead>
-              <tr>
-                <th>State</th>
-                <th>Total</th>
-                <th>Cured</th>
-                <th>Deaths</th>
-              </tr>
-            </thead>
-            <tbody>
-              {stats.map(stat => (
+    var { stats, stLoaded } = this.state;
+    if (!stLoaded) {
+      return <div id="loader"></div>
+    }
+    else {
+
+      return (
+        <div className="main" >
+          <Header />
+          <div className="mid">
+            <div className="flex-container">
+              <div className="active" id="box">Active: {this.state.con.activeCases}</div>
+              <div className="recover" id="box"> Cured: {this.state.con.recovered}</div>
+              <div className="death" id="box"> Deaths: {this.state.con.deaths}</div>
+              <div className="total" id="box"> Total: {this.state.con.totalCases}</div>
+            </div>
+            <br />
+            <table style={{ overflowX: 'auto' }}>
+              <thead>
                 <tr>
-                  <td>{stat.state}</td>
-                  <td>{stat.noOfCases}</td>
-                  <td>{stat.cured}</td>
-                  <td>{stat.deaths}</td>
+                  <th>State</th>
+                  <th>Total</th>
+                  <th>Cured</th>
+                  <th>Deaths</th>
                 </tr>
-              ))}
+              </thead>
+              <tbody>
+                {stats.map(stat => (
+                  <tr>
+                    <td>{stat.state}</td>
+                    <td>{stat.noOfCases}</td>
+                    <td>{stat.cured}</td>
+                    <td>{stat.deaths}</td>
+                  </tr>
+                ))}
 
-            </tbody>
-          </table>
-          <br />
+              </tbody>
+            </table>
+            <br />
           As on: {this.state.date.substring(0, 9)}
-        </div>
-        <div className="links">
-          <a href="https://apify.com/zuzka/covid-in">Country Statistic API</a><hr />
+          </div>
+          <div className="links">
+            <a href="https://apify.com/zuzka/covid-in">Country Statistic API</a><hr />
 
-          <a href="https://covid-india-cases.herokuapp.com/states/">States Statistic API</a><hr />
+            <a href="https://covid-india-cases.herokuapp.com/states/">States Statistic API</a><hr />
 
-          <a href="https://www.mohfw.gov.in/">Ministry of Health and Family Welfare Government of India</a><hr />
-        </div>
-        <Footer />
-      </div >
-    )
+            <a href="https://www.mohfw.gov.in/">Ministry of Health and Family Welfare Government of India</a><hr />
+          </div>
+          <Footer />
+        </div >
+      )
+    }
   }
 }
 
