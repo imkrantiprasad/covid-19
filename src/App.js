@@ -42,17 +42,18 @@ class App extends React.Component {
         <div className="mid">
           <div className="flex-container">
             <div className="active" id="box">Active: {this.state.con.activeCases}</div>
-            <div className="recover" id="box"> Recovered: {this.state.con.recovered}</div>
+            <div className="recover" id="box"> Cured: {this.state.con.recovered}</div>
             <div className="death" id="box"> Deaths: {this.state.con.deaths}</div>
             <div className="total" id="box"> Total: {this.state.con.totalCases}</div>
           </div>
+          <br />
           <table className="table">
             <thead>
               <tr>
-                <th>Region</th>
+                <th>State</th>
                 <th>Total Infected</th>
-                <th>Recovered</th>
-                <th>Deceased</th>
+                <th>Cured</th>
+                <th>Deaths</th>
               </tr>
             </thead>
             <tbody>
@@ -67,15 +68,18 @@ class App extends React.Component {
 
             </tbody>
           </table>
+          <br />
           As on: {this.state.date.substring(0, 9)}
         </div>
         <div className="links">
-          <a href="https://apify.com/zuzka/covid-in">API Used</a><hr />
+          <a href="https://apify.com/zuzka/covid-in">Country Statistic API</a><hr />
+
+          <a href="https://covid-india-cases.herokuapp.com/states/">States Statistic API</a><hr />
 
           <a href="https://www.mohfw.gov.in/">Ministry of Health and Family Welfare Government of India</a><hr />
         </div>
         <Footer />
-      </div>
+      </div >
     )
   }
 }

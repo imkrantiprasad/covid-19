@@ -24,6 +24,7 @@ table {
   width: 80%;
   border: 1px solid #ddd;
   margin: auto;
+  overflow-x: auto;
 }
 
 th,
@@ -122,5 +123,10 @@ tr:nth-child(even) {
 
   .head {
     font-size: larger;
+  }
+
+  table {
+    font-size: small;
+    padding: 2px;
   }
 }
