@@ -84,6 +84,8 @@ class App extends React.Component {
             <a href="https://covid-india-cases.herokuapp.com/states/">States Statistic API</a><hr />
 
             <a href="https://www.mohfw.gov.in/">Ministry of Health and Family Welfare Government of India</a><hr />
+            <a href="https://github.com/imkrantiprasad/covid-19">Source Code</a><hr />
+
           </div>
           <Footer />
         </div >
