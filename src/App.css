@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Trocchi&display=swap");
 body {
   background-color: whitesmoke;
 }
@@ -56,6 +57,11 @@ body {
   padding: 10px 0px;
   text-align: center;
   color: black;
+  font-family: "Trocchi", serif;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 48px;
+  margin: 0;
   /* text-decoration: underline; */
 }
 
