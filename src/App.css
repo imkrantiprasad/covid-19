@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Trocchi&display=swap");
+
 body {
   background-color: whitesmoke;
 }
+
 #loader {
   display: block;
   position: absolute;
@@ -25,11 +27,13 @@ body {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
+
 @keyframes spin6 {
   from {
     -webkit-transform: rotate(0deg);
@@ -37,6 +41,7 @@ body {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
@@ -44,6 +49,7 @@ body {
     transform: rotate(359deg);
   }
 }
+
 .main {
   width: 80%;
   /* height: 80%; */
@@ -74,6 +80,7 @@ table {
   margin: auto;
   overflow-x: auto;
 }
+
 th {
   position: -webkit-sticky;
   position: sticky;
@@ -84,6 +91,7 @@ th {
   padding: 8px;
   background-color: #ddd;
 }
+
 td {
   border: 1px solid #ddd;
   text-align: left;
@@ -135,11 +143,9 @@ tr:nth-child(even) {
   margin: 5px;
   border-radius: 10px;
   max-width: 200px;
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 0, 0, 0),
-    rgb(240, 72, 72)
-  );
+  background-image: linear-gradient(to right,
+      rgba(255, 0, 0, 0),
+      rgb(240, 72, 72));
 }
 
 .recover {
@@ -147,11 +153,9 @@ tr:nth-child(even) {
   margin: 5px;
   border-radius: 10px;
   max-width: 200px;
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 0, 0, 0),
-    rgb(240, 162, 72)
-  );
+  background-image: linear-gradient(to right,
+      rgba(255, 0, 0, 0),
+      rgb(240, 162, 72));
 }
 
 .death {
@@ -159,11 +163,9 @@ tr:nth-child(even) {
   margin: 5px;
   border-radius: 10px;
   max-width: 200px;
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 0, 0, 0),
-    rgb(243, 240, 62)
-  );
+  background-image: linear-gradient(to right,
+      rgba(255, 0, 0, 0),
+      rgb(243, 240, 62));
 }
 
 .total {
@@ -171,11 +173,9 @@ tr:nth-child(even) {
   margin: 5px;
   border-radius: 10px;
   max-width: 200px;
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 0, 0, 0),
-    rgb(43, 207, 43)
-  );
+  background-image: linear-gradient(to right,
+      rgba(255, 0, 0, 0),
+      rgb(43, 207, 43));
 }
 
 #box {
@@ -187,6 +187,7 @@ tr:nth-child(even) {
   .main {
     width: 98%;
   }
+
   .flex-container {
     /* display: flex;
     justify-content: center; */
