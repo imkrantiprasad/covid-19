@@ -47,7 +47,7 @@ class App extends React.Component {
             <div className="total" id="box"> Total: {this.state.con.totalCases}</div>
           </div>
           <br />
-          <table className="table">
+          <table style={{ overflowX: 'auto' }}>
             <thead>
               <tr>
                 <th>State</th>
