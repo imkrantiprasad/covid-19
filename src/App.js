@@ -51,7 +51,7 @@ class App extends React.Component {
             <thead>
               <tr>
                 <th>State</th>
-                <th>Total Infected</th>
+                <th>Total</th>
                 <th>Cured</th>
                 <th>Deaths</th>
               </tr>
