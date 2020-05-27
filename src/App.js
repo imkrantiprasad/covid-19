@@ -59,6 +59,7 @@ class App extends React.Component {
                 <tr>
                   <th>State</th>
                   <th>Total</th>
+                  <th>Active</th>
                   <th>Cured</th>
                   <th>Deaths</th>
                 </tr>
@@ -68,6 +69,7 @@ class App extends React.Component {
                   <tr>
                     <td>{stat.state}</td>
                     <td>{stat.noOfCases}</td>
+                    <td>{stat.noOfCases - stat.cured - stat.deaths}</td>
                     <td>{stat.cured}</td>
                     <td>{stat.deaths}</td>
                   </tr>

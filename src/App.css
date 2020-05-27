@@ -201,7 +201,9 @@ tr:nth-child(even) {
   }
 
   table {
-    font-size: small;
-    padding: 2px;
+    font-size: smaller;
+    padding: 0;
+    width: 90%;
+    margin: auto;
   }
 }
