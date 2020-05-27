@@ -48,30 +48,30 @@ class App extends React.Component {
           <Header />
           <div className="mid">
             <div className="flex-container">
+              <div className="total" id="box"> Total: {this.state.con.totalCases}</div>
               <div className="active" id="box">Active: {this.state.con.activeCases}</div>
               <div className="recover" id="box"> Cured: {this.state.con.recovered}</div>
               <div className="death" id="box"> Deaths: {this.state.con.deaths}</div>
-              <div className="total" id="box"> Total: {this.state.con.totalCases}</div>
             </div>
             <br />
             <table style={{ overflowX: 'auto' }}>
               <thead>
                 <tr>
-                  <th>State</th>
-                  <th>Total</th>
-                  <th>Active</th>
-                  <th>Cured</th>
-                  <th>Deaths</th>
+                  <th>State/UTs</th>
+                  <th id="total">Total</th>
+                  <th id="active">Active</th>
+                  <th id="cured">Cured</th>
+                  <th id="death">Deaths</th>
                 </tr>
               </thead>
               <tbody>
                 {stats.map(stat => (
                   <tr>
                     <td>{stat.state}</td>
-                    <td>{stat.noOfCases}</td>
-                    <td>{stat.noOfCases - stat.cured - stat.deaths}</td>
-                    <td>{stat.cured}</td>
-                    <td>{stat.deaths}</td>
+                    <td id="total">{stat.noOfCases}</td>
+                    <td id="active">{stat.noOfCases - stat.cured - stat.deaths}</td>
+                    <td id="cured">{stat.cured}</td>
+                    <td id="death">{stat.deaths}</td>
                   </tr>
                 ))}
 

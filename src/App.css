@@ -55,7 +55,7 @@ body {
   /* height: 80%; */
   background-color: white;
   margin: auto;
-  margin-top: 2%;
+  margin-top: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -106,6 +106,22 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
+#total {
+  color: #008744;
+}
+
+#active {
+  color: #0057e7;
+}
+
+#cured {
+  color: rgb(231, 124, 2);
+}
+
+#death {
+  color: #d62d20;
+}
+
 .foot {
   padding: 10px 0px;
   text-align: center;
@@ -139,13 +155,13 @@ tr:nth-child(even) {
 }
 
 .active {
-  border: 1px solid red;
+  border: 1px solid #0057e7;
   margin: 5px;
   border-radius: 10px;
   max-width: 200px;
   background-image: linear-gradient(to right,
       rgba(255, 0, 0, 0),
-      rgb(240, 72, 72));
+      #0057e7);
 }
 
 .recover {
@@ -159,13 +175,13 @@ tr:nth-child(even) {
 }
 
 .death {
-  border: 1px solid yellow;
+  border: 1px solid red;
   margin: 5px;
   border-radius: 10px;
   max-width: 200px;
   background-image: linear-gradient(to right,
       rgba(255, 0, 0, 0),
-      rgb(243, 240, 62));
+      rgb(240, 72, 72));
 }
 
 .total {
