@@ -42,7 +42,6 @@ class App extends React.Component {
       return <div id="loader"></div>
     }
     else {
-
       return (
         <div className="main" >
           <Header />
