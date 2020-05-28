@@ -47,10 +47,11 @@ class App extends React.Component {
           <Header />
           <div className="mid">
             <div className="flex-container">
-              <div className="total" id="box"> Total: {this.state.con.totalCases}</div>
+              <div className="h" id="box">Cases around India:</div>
+              <div className="total" id="box">Total: {this.state.con.totalCases}</div>
               <div className="active" id="box">Active: {this.state.con.activeCases}</div>
-              <div className="recover" id="box"> Cured: {this.state.con.recovered}</div>
-              <div className="death" id="box"> Deaths: {this.state.con.deaths}</div>
+              <div className="recover" id="box">Cured: {this.state.con.recovered}</div>
+              <div className="death" id="box">Deaths: {this.state.con.deaths}</div>
             </div>
             <br />
             <table style={{ overflowX: 'auto' }}>

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Trocchi&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
 
 body {
   background-color: whitesmoke;
@@ -54,22 +54,25 @@ body {
 .main {
   width: 80%;
   /* height: 80%; */
-  background-color: white;
+  /* background-color: white; */
+  background: #ffffff;
+  /* url("pic/c1.jpg") no-repeat right top; */
   margin: auto;
   margin-top: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .head {
   padding: 10px 0px;
   text-align: center;
-  color: black;
+  color: white;
+  background-color: black;
   font-family: "Trocchi", serif;
   font-size: 45px;
   font-weight: normal;
   line-height: 48px;
-  margin: 0;
+  margin: 6px;
   /* text-decoration: underline; */
 }
 
@@ -135,7 +138,8 @@ tr:nth-child(even) {
 }
 
 .mid {
-  margin-top: 10px;
+  margin-top: 20px;
+  /* margin-bottom: 30px; */
   text-align: center;
 }
 
@@ -160,42 +164,49 @@ tr:nth-child(even) {
   border: 1px solid #0057e7;
   margin: 5px;
   border-radius: 10px;
-  max-width: 200px;
-  background-image: linear-gradient(to right,
-      rgba(255, 0, 0, 0),
-      #0057e7);
+  /* max-width: 200px; */
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #0057e7);
 }
 
 .recover {
   border: 1px solid orange;
   margin: 5px;
   border-radius: 10px;
-  max-width: 200px;
-  background-image: linear-gradient(to right,
-      rgba(255, 0, 0, 0),
-      rgb(240, 162, 72));
+  /* max-width: 200px; */
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(240, 162, 72)
+  );
 }
 
 .death {
   border: 1px solid red;
   margin: 5px;
   border-radius: 10px;
-  max-width: 200px;
-  background-image: linear-gradient(to right,
-      rgba(255, 0, 0, 0),
-      rgb(240, 72, 72));
+  /* max-width: 200px; */
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(240, 72, 72)
+  );
 }
 
 .total {
   border: 1px solid green;
   margin: 5px;
   border-radius: 10px;
-  max-width: 200px;
-  background-image: linear-gradient(to right,
-      rgba(255, 0, 0, 0),
-      rgb(43, 207, 43));
+  /* max-width: 200px; */
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(43, 207, 43)
+  );
 }
-
+.h {
+  margin: 5px;
+  /* max-width: 200px; */
+}
 #box {
   padding: 10px 20px;
 }
