@@ -68,8 +68,8 @@ class App extends React.Component {
                 {stats.map(stat => (
                   <tr>
                     <td>{stat.state}</td>
-                    <td id="total">{stat.noOfCases}</td>
-                    <td id="active">{stat.noOfCases - stat.cured - stat.deaths}</td>
+                    <td id="total">{stat.noOfCases + stat.cured + stat.deaths}</td>
+                    <td id="active">{stat.noOfCases}</td>
                     <td id="cured">{stat.cured}</td>
                     <td id="death">{stat.deaths}</td>
                   </tr>
